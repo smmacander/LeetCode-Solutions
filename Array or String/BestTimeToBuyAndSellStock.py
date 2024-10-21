@@ -26,7 +26,7 @@ def run_tests():
 
     #Define your test cases
     test_cases = [
-        #Each test case is a tuple of (nums1, m, nums2, n, expected_result)
+        #Each test case is a tuple of (prices, expected_result)
         ([7,1,5,3,6,4], 5),
         ([7,6,4,3,1], 0),
         ([7, 1, 5, 3, 6, 4], 5),
@@ -42,7 +42,7 @@ def run_tests():
     ]
 
     for i, (nums, expected) in enumerate(test_cases):
-        #call the merge method
+        #call the method
         output = solution.maxProfit(nums)
 
         #compare the result with the expected output
